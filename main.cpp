@@ -12,6 +12,16 @@
  *    See the License for the specific language governing permissions and
  *    limitations under the License.
 */
+/**
+ * @author: Benrick Smit
+ * @email: metatronicprogramming@hotmail.com
+ * @date: 13 June 2020
+ * @modified: 13 June 2020
+ * 
+ * @brief: This is the main class which gives some function examples and how to use them with the profiler
+ * 
+ */ 
+
 
 #include <cstdio>
 #include <iostream>
@@ -66,7 +76,7 @@ int main(){
     std::string id = profiler->get_id();
     profiler->start(__PRETTY_FUNCTION__, id, PROFILER_LOG);
     
-    int num = 20;
+    int num = 10;
     std::cout << std::endl << "Factorial " << num << ": " << factorial(num) << std::endl;
     std::cout << "Fibbonacci Sequence " << num << ": " << fibb(num) << std::endl << std::endl;
 
