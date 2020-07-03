@@ -216,12 +216,4 @@ void Chronos::friendly_stop() {
     }// end of if else
     csv_file.close();
 
-
-
-    // Run a Python Script should it exist to create a graph with the functions
-    std::string script_path = "scripts/main.py";
-    if(fs::exists(script_path.c_str())){
-        std::string command = "python " + script_path; 
-        system(command.c_str());
-    }//end of if
 }

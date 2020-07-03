@@ -15,4 +15,4 @@ set(CMAKE_CXX_STANDARD 17)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
-add_executable(Chronos_Test main.cpp libs/Chronos.cpp libs/ChronosProcess.cpp)
+add_executable(Chronos_Test src/main.cpp include/Chronos/Chronos.cpp include/Chronos/ChronosProcess.cpp)
